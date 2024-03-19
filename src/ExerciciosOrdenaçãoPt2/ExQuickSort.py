@@ -20,17 +20,13 @@ class QuickSort:
             self.quickSort(arr, pi + 1, high)
 
 if __name__ == "__main__":
-    # Criando o vetor com 2000 posições e preenchendo-o de maneira aleatória
     vetor = [random.randint(0, 1000) for _ in range(2000)]
 
-    # Imprimindo o vetor antes da ordenação
     print("Vetor antes da ordenação:")
     print(vetor)
 
-    # Ordenando o vetor usando o algoritmo QuickSort
     qs = QuickSort()
     qs.quickSort(vetor, 0, len(vetor) - 1)
 
-    # Imprimindo o vetor após a ordenação
     print("Vetor após a ordenação:")
     print(vetor)
